@@ -202,11 +202,11 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Dark_Ishu_Media/gojo.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Dark_Ishu_Media/gojo.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -260,25 +260,25 @@ const reply = (teks) => {
         //auto reply 
         for (let anji of setik){
 				if (budy === anji){
-					result = fs.readFileSync(`./GojoMedia/sticker/${anji}.webp`)
+					result = fs.readFileSync(`./Dark_Ishu_Media/sticker/${anji}.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
 				if (budy === anju){
-					result = fs.readFileSync(`./GojoMedia/vn/${anju}.mp3`)
+					result = fs.readFileSync(`./Dark_Ishu_Media/vn/${anju}.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
 				if (budy === anjh){
-					result = fs.readFileSync(`./GojoMedia/image/${anjh}.jpg`)
+					result = fs.readFileSync(`./Dark_Ishu_Media/image/${anjh}.jpg`)
 					GojoMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 					for (let anjh of videox){
 				if (budy === anjh){
-					result = fs.readFileSync(`./GojoMedia/vid/${anjh}.mp4`)
+					result = fs.readFileSync(`./Dark_Ishu_Media/vid/${anjh}.mp4`)
 					GojoMdNx.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
 				  }
@@ -1306,10 +1306,11 @@ GojoMdNx.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `ඇයි බං කුනුහර්ප කියන්නේ කුනුහර්ප කියන්න එපා බං ${pushname}}`
+            let jawab = `ඇයි බං කුනුහර්ප කියන්නේ කුනුහර්ප කියන්න එපා බං
+	    ${pushname}`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '👀', buttonText: { displayText: 'ඉෂාන් කියන්නේ හොද ළමයෙක් 👌' }, type: 1 }
+                        { buttonId: '👀', buttonText: { displayText: 'ඉශූ කියන්නේ හොද ළමයෙක් 👌' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: ments})
             }
@@ -1646,20 +1647,15 @@ break
             reply('Successfully Deleted The Vote Session In This Group')
 	    }
             break
-               case 'wpgroup': case 'grup': {
+               case 'mute': case 'grup': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
 		if (!isAdmins) return replay(`${mess.admin}`)       
-                if (args[0] === 'mute'){
+                if (args[0] === 'on'){
                     await GojoMdNx.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Group එක Mute🚫 කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
-                } else if (args[0] === 'unmute'){
+                } else if (args[0] === 'off'){
                     await GojoMdNx.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Group එක Unmute⭕  කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
-                } else {
-                let buttons = [
-                        { buttonId: 'group unmute', buttonText: { displayText: 'Unmute⭕' }, type: 2 },
-                        { buttonId: 'group mute', buttonText: { displayText: 'Mute🚫' }, type: 2 }
-                    ]
-                    await GojoMdNx.sendButtonText(m.chat, buttons, `Group Mode`, GojoMdNx.user.name, m)
+                    
 
              }
             }
@@ -3367,14 +3363,14 @@ typemenu = 'catalog'
 reply("Success Changing Menu To "+q)
 }
                     break
-	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./GojoMedia/vn/Hi.mp3`)
+	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Hi.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
 
 }
 break
-		case 'mk': {result = fs.readFileSync(`./GojoMedia/vn/mk.mp3`)
+		case 'mk': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/mk.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3382,7 +3378,7 @@ break
 
 }
 break
-		case 'gn': {result = fs.readFileSync(`./GojoMedia/vn/gn.mp3`)
+		case 'gn': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/gn.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3391,14 +3387,14 @@ break
 }
 break
 		
-		case 'gm': {result = fs.readFileSync(`./GojoMedia/vn/gm.mp3`)
+		case 'gm': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Gm.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
 
 }
 break
-		case 'ishan': {result = fs.readFileSync(`./GojoMedia/vn/ishan.mp3`)
+		case 'ishan': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Ishan.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3406,14 +3402,14 @@ break
 
 }
 break
-		case 'adarei': {result = fs.readFileSync(`./GojoMedia/vn/adarei.mp3`)
+		case 'adarei': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Adarei.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
 
 }
 break
-		case 'fuck': {result = fs.readFileSync(`./GojoMedia/vn/fuck.mp3`)
+		case 'fuck': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Fuck.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3422,21 +3418,21 @@ break
 
 }
 break
-	case 'ha': case 'hako': case 'hakoo': {result = fs.readFileSync(`./GojoMedia/vn/Ha.mp3`)
+	case 'ha': case 'hako': case 'hakoo': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Ha.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
 
 }
 break
-	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./GojoMedia/vn/Na.mp3`)
+	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Na.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
 
 }
 break
-	case 'mmm': case 'hmm': case 'හ්ම්': case 'mm': case 'hmmm': case 'හ්ම්ම්': {result = fs.readFileSync(`./GojoMedia/vn/Hmm.mp3`)
+	case 'mmm': case 'hmm': case 'හ්ම්': case 'mm': case 'hmmm': case 'හ්ම්ම්': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Hmm.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3444,36 +3440,14 @@ break
 }
 break
 		
-		case 'adarey': {result = fs.readFileSync(`./GojoMedia/vn/adarey.mp3`)
+		case 'adarey': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Adarey.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
 
 }
 break
-	case 'ane': case 'anee': case 'අනේ': case 'අනෙ': {result = fs.readFileSync(`./GojoMedia/vn/Ane.mp3`)
-					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-
-}
-break
-	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./GojoMedia/vn/Huththa.mp3`)
-					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-}
-break
-	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./GojoMedia/vn/Pakaya.mp3`)
-					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-}
-break
-	case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./GojoMedia/vn/Ponnaya.mp3`)
+	case 'ane': case 'anee': case 'අනේ': case 'අනෙ': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Ane.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3481,7 +3455,21 @@ break
 
 }
 break
-		case 'denawada': {result = fs.readFileSync(`./GojoMedia/vn/denawada.mp3`)
+	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Huththa.mp3`)
+					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
+	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Pakaya.mp3`)
+					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
+	case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Ponnaya.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3489,7 +3477,7 @@ break
 
 }
 break
-	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./GojoMedia/vn/Marilada.mp3`)
+		case 'denawada': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/denawada.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3497,7 +3485,7 @@ break
 
 }
 break
-	case 'gothaya': case 'goothaya': case 'ගෝතයා': case 'ගෝතය': {result = fs.readFileSync(`./GojoMedia/vn/Gothaya.mp3`)
+	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Marilada.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3505,7 +3493,7 @@ break
 
 }
 break
-	case 'umma': case 'ummah': case 'ummma': case 'උම්මා': case 'උම්මාහ්': {result = fs.readFileSync(`./GojoMedia/vn/Umma.mp3`)
+	case 'gothaya': case 'goothaya': case 'ගෝතයා': case 'ගෝතය': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Gothaya.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3513,7 +3501,7 @@ break
 
 }
 break
-	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./GojoMedia/vn/Wesi.mp3`)
+	case 'umma': case 'ummah': case 'ummma': case 'උම්මා': case 'උම්මාහ්': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Umma.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3521,114 +3509,113 @@ break
 
 }
 break
-		case 'ado': {result = fs.readFileSync(`./GojoMedia/sticker/ado.webp`)
+	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Wesi.mp3`)
+					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+		case 'ado': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ado.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'adarey': {result = fs.readFileSync(`./GojoMedia/sticker/adarey.webp`)
+		case 'adarey': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/adarey.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'arakku': {result = fs.readFileSync(`./GojoMedia/sticker/arakku.webp`)
+		case 'arakku': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/arakku.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'athal': {result = fs.readFileSync(`./GojoMedia/sticker/athal.webp`)
+		case 'athal': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/athal.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'aththa': {result = fs.readFileSync(`./GojoMedia/sticker/aththa.webp`)
+		case 'aththa': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/aththa.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ayye': {result = fs.readFileSync(`./GojoMedia/sticker/ayye.webp`)
+		case 'ayye': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ayye.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ayyo': {result = fs.readFileSync(`./GojoMedia/sticker/ayyo.webp`)
+		case 'ayyo': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ayyo.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ba': {result = fs.readFileSync(`./GojoMedia/sticker/ba.webp`)
+		case 'ba': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ba.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'baha': {result = fs.readFileSync(`./GojoMedia/sticker/baha.webp`)
+		case 'baha': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/baha.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'bayay': {result = fs.readFileSync(`./GojoMedia/sticker/bayay.webp`)
+		case 'bayay': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bayay.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'bijja': {result = fs.readFileSync(`./GojoMedia/sticker/bijja.webp`)
+		case 'bijja': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bijja.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'bomuda': {result = fs.readFileSync(`./GojoMedia/sticker/bomuda.webp`)
+		case 'bomuda': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bomuda.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'data': {result = fs.readFileSync(`./GojoMedia/sticker/data.webp`)
+		case 'data': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/data.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'diyanko': {result = fs.readFileSync(`./GojoMedia/sticker/diyanko.webp`)
+		case 'diyanko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/diyanko.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ela': {result = fs.readFileSync(`./GojoMedia/sticker/ela.webp`)
-					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-
-
-case 'iya': {result = fs.readFileSync(`./GojoMedia/sticker/iya.webp`)
+		case 'ela': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ela.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3637,217 +3624,226 @@ case 'iya': {result = fs.readFileSync(`./GojoMedia/sticker/iya.webp`)
 break
 
 
-case 'ganja': {result = fs.readFileSync(`./GojoMedia/sticker/ganja.webp`)
+case 'iya': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/iya.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'gm': {result = fs.readFileSync(`./GojoMedia/sticker/gm.webp`)
+
+
+case 'ganja': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ganja.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'gn': {result = fs.readFileSync(`./GojoMedia/sticker/gn.webp`)
+		case 'gm': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/gm.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ha': {result = fs.readFileSync(`./GojoMedia/sticker/ha.webp`)
+		case 'gn': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/gn.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'hari': {result = fs.readFileSync(`./GojoMedia/sticker/hari.webp`)
+		case 'ha': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ha.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'holman': {result = fs.readFileSync(`./GojoMedia/sticker/holman.webp`)
+		case 'hari': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/hari.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ida': {result = fs.readFileSync(`./GojoMedia/sticker/ida.webp`)
+		case 'holman': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/holman.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'idahan': {result = fs.readFileSync(`./GojoMedia/sticker/idahan.webp`)
+		case 'ida': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ida.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'karapanko': {result = fs.readFileSync(`./GojoMedia/sticker/karapanko.webp`)
+		case 'idahan': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/idahan.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'kawda': {result = fs.readFileSync(`./GojoMedia/sticker/kawda.webp`)
+		case 'karapanko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/karapanko.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ko': {result = fs.readFileSync(`./GojoMedia/sticker/ko.webp`)
+		case 'kawda': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/kawda.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'koo': {result = fs.readFileSync(`./GojoMedia/sticker/koo.webp`)
+		case 'ko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ko.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'manika': {result = fs.readFileSync(`./GojoMedia/sticker/manika.webp`)
+		case 'koo': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/koo.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'marila': {result = fs.readFileSync(`./GojoMedia/sticker/marila.webp`)
+		case 'manika': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/manika.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'me': {result = fs.readFileSync(`./GojoMedia/sticker/me.webp`)
+		case 'marila': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/marila.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'mk': {result = fs.readFileSync(`./GojoMedia/sticker/mk.webp`)
+		case 'me': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/me.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'modaya': {result = fs.readFileSync(`./GojoMedia/sticker/modaya.webp`)
+		case 'mk': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/mk.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'mokakda': {result = fs.readFileSync(`./GojoMedia/sticker/mokakda.webp`)
+		case 'modaya': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/modaya.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'moko': {result = fs.readFileSync(`./GojoMedia/sticker/moko.webp`)
+		case 'mokakda': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/mokakda.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'naha': {result = fs.readFileSync(`./GojoMedia/sticker/naha.webp`)
+		case 'moko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/moko.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'natapan': {result = fs.readFileSync(`./GojoMedia/sticker/natapan.webp`)
+		case 'naha': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/naha.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'niyamay': {result = fs.readFileSync(`./GojoMedia/sticker/niyamay.webp`)
+		case 'natapan': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/natapan.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ow': {result = fs.readFileSync(`./GojoMedia/sticker/ow.webp`)
+		case 'niyamay': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/niyamay.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'palayan': {result = fs.readFileSync(`./GojoMedia/sticker/palayan.webp`)
+		case 'ow': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ow.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'pennanna': {result = fs.readFileSync(`./GojoMedia/sticker/pennanna.webp`)
+		case 'palayan': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/palayan.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'sira': {result = fs.readFileSync(`./GojoMedia/sticker/sira.webp`)
+		case 'pennanna': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/pennanna.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'tharahay': {result = fs.readFileSync(`./GojoMedia/sticker/tharahay.webp`)
+		case 'sira': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/sira.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'adarey': {result = fs.readFileSync(`./GojoMedia/sticker/adarey.webp`)
+		case 'tharahay': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/tharahay.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'huththa': {result = fs.readFileSync(`./GojoMedia/sticker/huththa.webp`)
+		case 'adarey': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/adarey.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-		case 'ponnaya': {result = fs.readFileSync(`./GojoMedia/sticker/ponnaya.webp`)
+		case 'huththa': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/huththa.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
 
 }
 break
-	case 'pakaya': case 'pamkaya': case 'pakayo': case 'pakayoo': {result = fs.readFileSync(`./GojoMedia/sticker/bijja.webp`)
+		case 'ponnaya': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ponnaya.webp`)
+					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+	case 'pakaya': case 'pamkaya': case 'pakayo': case 'pakayoo': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bijja.webp`)
 					GojoMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
