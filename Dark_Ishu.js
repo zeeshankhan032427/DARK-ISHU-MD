@@ -3956,12 +3956,10 @@ break
                                 }
                                 
                             }]
-                        }
-                    }
+                   
                 }
                 IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-              
-break
+              break
            case 'list': case 'menu':
     let buttons = [
         {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
