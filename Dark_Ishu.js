@@ -1678,7 +1678,7 @@ break
             }
             }
             break
-            case 'antilink': async(core) => { 
+            case 'antilink': { 
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -2109,7 +2109,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                IshuMdNx.sendImage(m.chat, media.thumb, `📝 Title : ${media.title}\n💽 File Size : ${media.filesizeF}\n📢 Url : ${isUrl(text)}\n🎵 Ext : MP3\n🎧 Resolution : ${args[1] || '320kbps'}`, m)
+                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download වෙන ගමන්..ඉක්මනින්ම ඔයායට Upload කරන්නම්' }, { quoted: m })
                 IshuMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
