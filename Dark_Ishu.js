@@ -4135,8 +4135,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔Create By",
 								"rows": [
 									{
-										"title": "Thanks To Ishan Sandeepa 🙏",
-										"description": "නිෂ්පාදනය :- ඉෂාන් සංදීප",
+										"title": "𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢",
+										"description": ".",
 										"rowId": `${prefix}tqtt`
 									}
 								]
@@ -4529,7 +4529,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹👩‍💻 report [bug]
 ┃║
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -4559,7 +4559,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🌎 checkvote
 ┃╠✹🌎 delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 
 case 'rpgmenu':
@@ -4578,7 +4578,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹⛔ buy [option]
 ┃╠✹⛔ sell [option]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -4633,7 +4633,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹😃 math [mode]
 ┃╠✹😃 suitpvp [tag]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 
 case 'ownermenu':
@@ -4652,7 +4652,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🤴 setppbot [image]
 ┃╠✹🤴 setexif
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4668,7 +4668,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹📥🎼 joox [query]
 ┃╠✹📥🔉 soundcloud [url]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4688,7 +4688,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔎 ringtone [query]
 ┃╠✹🔎 webtoon [query]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4700,7 +4700,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔖 animequote (indo)
 ┃╠✹🔖 couplepp
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4737,7 +4737,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹☀️ cringe
 ┃║
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4803,7 +4803,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹📝 1917 [txt]
 ┃╠✹📝 leaves [txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4824,7 +4824,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔄 dbinary [reply txt]
 ┃╠✹🔄 styletext [text]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4841,7 +4841,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹💻 getmsg
 ┃╠✹💻 delmsg
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4854,7 +4854,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🚫 next
 ┃╠✹🚫 leave
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4864,7 +4864,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃║
 ┃╠✹🔸 juzamma
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4884,7 +4884,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🎤 slow [reply aud]
 ┃╠✹🎤 squirrel [reply aud]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4923,13 +4923,13 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔹 zodiak (indo)
 ┃╠✹🔹 shio (indo)
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
 await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
-Thanks to Me Ishan Sandeepa... නිෂ්පාදනය :- ඉෂාන් සංදීප
- !!!`,unicorn, [{"urlButton": {"displayText": "👉 YouTube 👈","url": `${myweb}`}},{"urlButton": {"displayText": "👉 Facebook 👈","url": `${sc}`}},{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢... 
+ !!!`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
