@@ -3333,6 +3333,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'owner': case 'creator': {
+		result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
+					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
                 IshuMdNx.sendContact(m.chat, global.owner, m)
             }
             break
@@ -3856,14 +3858,7 @@ break
 
 }
 break
-		case 'owner': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
-					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-}
-break
-
+		
 		
 
 
@@ -3949,18 +3944,19 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 `,
                             hydratedButtons: [{
+                                }, {
                                 quickReplyButton: {
                                     displayText: 'All Menu 📁 ',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu 📂  ',
+                                    displayText: 'List Menu 📂',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️',
+                                    displayText: 'Owner 🙋‍♂️ ',
                                     id: `${prefix}owner`
                                 }
                                 
@@ -4153,12 +4149,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-    case 'darkishu': case 'info': case 'sewabot': case 'botinfo': {
+    case 'darkishu': case 'info': case 'ishuinfo': case 'botinfo': {
                 IshuMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: ` 
 		
-		*I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*  
+		  *Hi   ${m.pushName}*\n 
 		
-		*Hi   ${m.pushName}*\n 
+		*I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
 		
 		
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
