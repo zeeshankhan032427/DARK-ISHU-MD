@@ -3997,8 +3997,7 @@ break
 「 *Created By 𝙸𝚂𝙷𝙰𝙽 𝚂𝙰𝙽𝙳𝙴𝙴𝙿𝙰*  𖠌」━⭓
 
  `,
-             button,
-	     headerType: 4
+            
                 }
                 IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 break
