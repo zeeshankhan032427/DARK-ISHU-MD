@@ -4492,13 +4492,7 @@ case 'allmenu': {
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
-                           
-                            hydratedFooterText: `${pushname}`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: '👉 YouTube 👈',
-                                    url: `${myweb}`
-                                }
+                         
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Owner 🙋‍♂️',
