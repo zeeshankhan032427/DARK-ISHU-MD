@@ -3967,16 +3967,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-            case 'list': case 'menu': {
-            	timestampe = speed();
-latensie = speed() - timestampe
-                anu = ``
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-			     
-                            hydratedFooterText: `
+           case 'alive': case 'menu':
+    let buttons = [
+        {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
+{buttonId: `${prefix}allmenu`, buttonText: {displayText: '⫷ ALLMENU ⫸'}, type: 1},
+        {buttonId: `${prefix}command`, buttonText: {displayText: '⫷ LISTMENU ⫸'}, type: 1}]
+    let buttonMessage = {
+        image: { url: 'https://i.ibb.co/x7qYTrq/20220605-103944.jpg'},
+    caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3999,26 +3997,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 「 *Created By 𝙸𝚂𝙷𝙰𝙽 𝚂𝙰𝙽𝙳𝙴𝙴𝙿𝙰*  𖠌」━⭓
 
  `,
-                            hydratedButtons: [{
-                                
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'All Menu 📁 ',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️ ',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
+                            
                 }), { userJid: m.chat })
                 IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
