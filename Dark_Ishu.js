@@ -3370,7 +3370,7 @@ reply("Success Changing Menu To "+q)
 
 }
 break
-		case 'mk': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/mk.mp3`)
+		case 'mk': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Mk.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3378,7 +3378,7 @@ break
 
 }
 break
-		case 'gn': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/gn.mp3`)
+		case 'gn': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Gn.mp3`)
 					GojoMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -4164,7 +4164,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'darkishu': case 'info': case 'sewabot': case 'botinfo': {
-                GojoMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: `*Hi   ${m.pushName}*\n 
+                GojoMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: ` 
+		
+		*I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*  
+		
+		*Hi   ${m.pushName}*\n 
 		
 		
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
@@ -4222,7 +4226,7 @@ case 'allmenu': {
 ┃╠✹🌎 hidetag [text]
 ┃╠✹🌎 tagall [text]
 ┃╠✹🌎 antilink [on/off]
-┃╠✹🌎 wpgroup [mute/unmute]
+┃╠✹🌎 mute [on/off]
 ┃╠✹🌎 promote [reply/tag]
 ┃╠✹🌎 demote [reply/tag]
 ┃╠✹🌎 vote
@@ -4562,7 +4566,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🌎 hidetag [text]
 ┃╠✹🌎 tagall [text]
 ┃╠✹🌎 antilink [on/off]
-┃╠✹🌎 wpgroup [mute/unmute]
+┃╠✹🌎 mute [on/off]
 ┃╠✹🌎 promote [reply/tag]
 ┃╠✹🌎 demote [reply/tag]
 ┃╠✹🌎 vote
