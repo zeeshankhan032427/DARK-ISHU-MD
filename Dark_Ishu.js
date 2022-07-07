@@ -3982,7 +3982,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
 			     
-                            GojoMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: `
+                            hydratedFooterText: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
