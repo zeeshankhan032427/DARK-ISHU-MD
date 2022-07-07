@@ -1678,7 +1678,7 @@ break
             }
             }
             break
-            case 'antilink': {
+            case 'antilink': async(core) => { 
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
