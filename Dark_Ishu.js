@@ -2109,7 +2109,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download වෙන ගමන්..ඉක්මනින්ම ඔයායට Upload කරන්නම්' }, { quoted: m })
+                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download වෙන ගමන් 📥..ඉක්මනින්ම ඔයාට Upload කරන්නම් 📤' }, { quoted: m })
                 IshuMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -3379,7 +3379,7 @@ break
 		case 'mk': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Mk.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'පොල් ගානවා.. ඔයත් එනවද' }, { quoted: m })
 
 
 }
@@ -3387,7 +3387,7 @@ break
 		case 'gn': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Gn.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'තෝ යකාම කාපිය...' }, { quoted: m })
 
 
 }
@@ -3396,7 +3396,7 @@ break
 		case 'gm': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Gm.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'සුබ උදෑසනක් වේවා.. ඔයාටත්...' }, { quoted: m })
 
 }
 break
@@ -3411,7 +3411,7 @@ break
 		case 'adarei': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Adarei.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                         IshuMdNx.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
 
 }
 break
@@ -3434,7 +3434,7 @@ break
 	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Na.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'හා නැද්ද.. හා කමක් නෑ..' }, { quoted: m })
 
 }
 break
@@ -3449,7 +3449,7 @@ break
 		case 'adarey': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Adarey.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
 
 }
 break
@@ -3464,14 +3464,14 @@ break
 	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Huththa.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
 
 }
 break
 	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Pakaya.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
 
 }
 break
@@ -3479,14 +3479,14 @@ break
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
-
+                                          IshuMdNx.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
 
 }
 break
 		case 'denawada': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/denawada.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'මොනවද ඕන ...' }, { quoted: m })
 
 
 }
@@ -3494,7 +3494,7 @@ break
 	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Marilada.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'නෑ තාම පණපිටින් ඉන්නො..' }, { quoted: m })
 
 
 }
@@ -3518,7 +3518,7 @@ break
 	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Wesi.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
+                                        IshuMdNx.sendMessage(m.chat, { text :'උබලයි අම්මද බං ...' }, { quoted: m })
 
 
 }
