@@ -3967,7 +3967,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-           case 'alive': case 'menu':
+           case 'list': case 'menu':
     let buttons = [
         {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
 {buttonId: `${prefix}allmenu`, buttonText: {displayText: '⫷ ALLMENU ⫸'}, type: 1},
