@@ -3958,9 +3958,9 @@ break
                             }]
                         }
                     }
-                }), { userJid: m.chat })
-                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
+                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+              
 break
            case 'list': case 'menu':
     let buttons = [
