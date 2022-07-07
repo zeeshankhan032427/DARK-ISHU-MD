@@ -3369,7 +3369,10 @@ reply("Success Changing Menu To "+q)
 	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/Hi.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
+								   result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
+					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
+								   
 
 }
 break
