@@ -4489,10 +4489,11 @@ case 'allmenu': {
 ┃╚═══════✍︎Create By Ishan Sandeepa
 ┗━「 *Created By ${ownername}*  𖠌」━⭓`
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                     hydratedButtons: [{
-}, {
+                    
+                                
+                            }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️ ',
+                                    displayText: 'Owner 🙋‍♂️',
                                     id: `${prefix}owner`
                                 }
                             }]
