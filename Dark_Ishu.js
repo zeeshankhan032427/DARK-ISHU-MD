@@ -3335,7 +3335,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'owner': case 'creator': {
 		result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-		    reply('My Owner Is ${global.ownername}\n\n*http://wa.me/${global.owenenumber}*\n\n *I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*')
+		    reply('My Owner Is${global.ownername}\n\n*http://wa.me/${global.ownernomer}*\n\n *I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*')
                 
             }
             break
