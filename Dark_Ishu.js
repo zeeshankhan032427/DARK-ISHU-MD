@@ -3910,15 +3910,10 @@ break
 
 	    
                      case 'alive': case 'ishu':{
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            
-                            hydratedFooterText: `
+                           	let buttonMessage = {
+        image: { url: 'https://i.ibb.co/x7qYTrq/20220605-103944.jpg'},
+    caption: `
+    
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3964,7 +3959,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         }
                     }
                 }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
 break
            case 'list': case 'menu':
