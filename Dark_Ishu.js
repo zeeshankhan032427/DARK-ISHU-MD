@@ -3949,16 +3949,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 `,
                             hydratedButtons: [{
-                                urlButton: {
-                                    displayText: '👉 YouTube 👈',
-                                    url: `${myweb}`
-                                }
-                            }, {
-                            	urlButton: {
-                                displayText: '👉 Facebook 👈',
-                                    url: `${sc}`
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'All Menu 📁 ',
                                     id: `${prefix}allmenu`
@@ -3973,6 +3963,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                     displayText: 'Owner 🙋‍♂️',
                                     id: `${prefix}owner`
                                 }
+                                
                             }]
                         }
                     }
