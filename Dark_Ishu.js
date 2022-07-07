@@ -3993,7 +3993,8 @@ break
             
                 }
                 IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-                break
+          break
+			     
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
