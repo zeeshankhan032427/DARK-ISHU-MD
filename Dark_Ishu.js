@@ -3912,7 +3912,11 @@ break
 latensie = speed() - timestampe
  anu = ` `
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    GojoMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: `
+                    templateMessage: {
+                        hydratedTemplate: {
+                            hydratedContentText: anu,
+                            
+                            hydratedFooterText: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3978,7 +3982,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
 			     
-                            hydratedFooterText: `
+                            GojoMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
