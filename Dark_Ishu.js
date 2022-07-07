@@ -3941,8 +3941,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                
              
 
-「 *Created By 𝙸𝚂𝙷𝙰𝙽 𝚂𝙰𝙽𝙳𝙴𝙴𝙿𝙰*  𖠌」━⭓
-
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
 `,
                             hydratedButtons: [{
                                 }, {
@@ -3997,8 +3996,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 
 
-「 *Created By 𝙸𝚂𝙷𝙰𝙽 𝚂𝙰𝙽𝙳𝙴𝙴𝙿𝙰*  𖠌」━⭓
-
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
  `,
                             hydratedButtons: [{
                                 
@@ -4161,7 +4159,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
 		
 		Create By Ishan Sandeepa...\n` }, { quoted: m })
-            }
+            result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
+					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+    }
             break
             case 'sc': case 'script': {
                 reply(`https://www.youtube.com/c/SinhanadaMusicRemix\n  Subscribe කරන්න අමතක කරන්න එපා... අලුත්ම සිංදු ආපූ ගමන් අහන්න මේ චැනල් එක Subscribe කරලා තියා ගන්න...`)
