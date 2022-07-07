@@ -3856,6 +3856,13 @@ break
 
 }
 break
+		case 'owner': {result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
+					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
 
 		
 
@@ -4310,10 +4317,10 @@ case 'allmenu': {
 ┃╠✹📖️═☬❯ DOWNLOADER 📥 ❮ 👇
 ┃║
 ┃╠✹📥🎵 song [url|quality]
-┃╠✹📥🎵 ytmp3 [url|quality]
-┃╠✹📥🎥 ytmp4 [url|quality]
-┃╠✹📥🎶 getmusic [yt link]
-┃╠✹📥🎞️ getvideo [yt link]
+┃╠✹📥🎵 ytmp3 [url]
+┃╠✹📥🎥 ytmp4 [url]
+┃╠✹📥🎶 getmusic [url]
+┃╠✹📥🎞️ getvideo [url]
 ┃╠✹📥🎼 joox [query]
 ┃╠✹📥🔉 soundcloud [url]
 ┃║
