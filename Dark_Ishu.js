@@ -3998,8 +3998,8 @@ break
 
  `,
                             
-                }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                }
+                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
                 break
                 case 'command': {
