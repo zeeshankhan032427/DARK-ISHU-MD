@@ -202,11 +202,11 @@ module.exports = IshuMdNx = async (IshuMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            IshuMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Dark_Ishu_Media/Ishu.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
+            IshuMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Dark_Ishu_Media/ishu.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            IshuMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Dark_Ishu_Media/Ishu.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
+            IshuMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Create By Ishan Sandeepa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Dark_Ishu_Media/ishu.jpg`),"sourceUrl": "https://i.im.ge/2022/07/03/uUTgTK.png"}}}, { quoted: m})
         }
 	
         //Public & Self\\
