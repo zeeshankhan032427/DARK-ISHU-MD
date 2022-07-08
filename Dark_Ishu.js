@@ -3945,7 +3945,7 @@ break
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
 `,
                             
-                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                IshuMdNx.sendMessage(m.chat, buttonMessage, )
                 }
 break
             case 'list': case 'menu': {
@@ -3978,7 +3978,7 @@ break
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
  `,
                            
-                 IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                 IshuMdNx.sendMessage(m.chat, buttonMessage, )
                 }
                 break
                 case 'command': {
