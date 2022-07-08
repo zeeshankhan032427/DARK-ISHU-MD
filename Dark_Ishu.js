@@ -3914,6 +3914,7 @@ break
 
 	    
                     case 'alive': case 'menu':
+		
     let buttons = [
         {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
 {buttonId: `${prefix}allmenu`, buttonText: {displayText: '⫷ ALLMENU ⫸'}, type: 1},
@@ -3946,8 +3947,8 @@ break
 `,
     }
                 IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-                }
-break
+}
+     break
             
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
