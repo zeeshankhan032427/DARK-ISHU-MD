@@ -2078,7 +2078,7 @@ break
                 if (!text) return reply(`Example : ${prefix + command} Stay`)
                 let yts = require("yt-search")
                 let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+                let anu = search.videos[Math.floor(Math.random() * search.videos)]
                 let buttons = [
                     {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 සිංදුව 🎵 '}, type: 1},
                     {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️ වීඩීයෝව 📽️'}, type: 1}
@@ -2109,7 +2109,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download වෙන ගමන් 📥..ඉක්මනින්ම ඔයාට Upload කරන්නම් 📤' }, { quoted: m })
+                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ..ඉක්මනින්ම ඔයාට Upload 📤 කරන්නම් ' }, { quoted: m })
                 IshuMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -4022,27 +4022,26 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         }
                     }
                 }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png',}
-					      }
-				      break
-	      
-               
+                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                }
+                break
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `𝘏𝘪  ${pushname} 👋`, 
+			
                     description: `
 		    💁‍♀️ මෙතනින් ඔයාට ඕන Command List එක තෝර ගන්න \n\n`,
                     buttonText: "👨‍💻 LIST MENU 👨‍💻",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "⚔Main Features",
+								"title": "⚔All Features",
 								"rows": [
 									{
-										"title": "Main Menu 👨‍🎓",
-										"description": "Main කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
-										"rowId": `${prefix}mainmenu`
+										"title": "All Menu 📁",
+										"description": "සියලුම කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක!",
+										"rowId": `${prefix}allmenu`
 									}
 								]
 							},
@@ -4050,9 +4049,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔Bot Features",
 								"rows": [
 									{
-										"title": "All Menu 📁",
-										"description": "සියලුම කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක!",
-										"rowId": `${prefix}allmenu`
+										"title": "Main Menu 👨‍🎓",
+										"description": "Main කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										"rowId": `${prefix}mainmenu`
 									},
 									{
 										"title": "Owner Menu 🤴",
@@ -4163,7 +4162,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
 		
-		Create By Ishan Sandeepa...\n` }, { quoted: m })
+		𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢...\n` }, { quoted: m })
             result = fs.readFileSync(`./Dark_Ishu_Media/vn/owner.mp3`)
 					IshuMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
     }
@@ -4931,7 +4930,7 @@ await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 ┗━━「 ${pushname} 」━⭓`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
-var unicorn = await getBuffer(picak+'Developer')
+var unicorn = await getBuffer(picak+'Create By')
 await IshuMdNx.send5ButImg(from, `` + '' + ' ', `
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢... 
  !!!`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝘉𝘖𝘛 𝘐𝘯𝘧𝘰 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "Owner 🙋‍","id": 'owner'}}] )
