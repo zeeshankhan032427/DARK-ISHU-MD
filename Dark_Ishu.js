@@ -3971,8 +3971,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
 break
             case 'list': case 'menu': {
-            	IshuMdNx.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png' }, caption: ` 
-		
+            	timestampe = speed();
+latensie = speed() - timestampe
+                anu = ``
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            hydratedContentText: anu,
+			     
+                            hydratedFooterText: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -4015,9 +4022,11 @@ break
                         }
                     }
                 }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
-                break
+                IshuMdNx.relayMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png',}
+					      }
+				      break
+	      
+               
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
