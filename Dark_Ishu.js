@@ -3913,7 +3913,7 @@ break
 		
 
 	    
-                    case 'alive': case 'menu':
+                    case 'list': case 'menu': {
 		
     let buttons = [
         {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
