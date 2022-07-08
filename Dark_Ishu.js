@@ -3913,16 +3913,14 @@ break
 		
 
 	    
-                     case 'alive': case 'ishu':{
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            
-                            hydratedFooterText: `
+                    case 'alive': case 'menu':
+    let buttons = [
+        {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
+{buttonId: `${prefix}allmenu`, buttonText: {displayText: '⫷ ALLMENU ⫸'}, type: 1},
+        {buttonId: `${prefix}command`, buttonText: {displayText: '⫷ LISTMENU ⫸'}, type: 1}]
+    let buttonMessage = {
+        image: { url: 'https://i.ibb.co/x7qYTrq/20220605-103944.jpg'},
+    caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3946,79 +3944,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
 `,
-                            hydratedButtons: [{
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'All Menu 📁 ',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️ ',
-                                    id: `${prefix}owner`
-                                }
-                                
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+    }
+                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
 break
-            case 'list': case 'menu': {
-            	let buttonMessage = {
-        image: { url: 'https://i.ibb.co/x7qYTrq/20220605-103944.jpg'},
-    caption: `
-┏━━━━━━━━━━━━━━━━━━━━━━
-┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
-┗━━━━━━━━━━━━━━━━━━━━━━
-
-𝘏𝘪  ${pushname} 👋
-
-
-      *I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
-
-
-...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋...
-
-💁‍♂️ ඔයාලට ඕන 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )  එක පහතින් තෝර ගන්න පුලුවන්....
-
- 📂  𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 
- 📂  𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐
-
-
-
-𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
- `,
-                            hydratedButtons: [{
-                                
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'All Menu 📁 ',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️ ',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-		}
-                    
-              
-                IshuMdNx.relayMessage(m.chat, buttonMessage, })
-                }
-                break
+            
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
