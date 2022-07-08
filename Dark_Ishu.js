@@ -3914,15 +3914,13 @@ break
 
 	    
                      case 'alive': case 'ishu':{
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            
-                            hydratedFooterText: `
+                           	let buttons = [
+        {buttonId: `${prefix}owner`, buttonText: {displayText: 'Owner 🙋‍♂️'}, type: 1},
+{buttonId: `${prefix}allmenu`, buttonText: {displayText: 'All Menu 📁'}, type: 1},
+        {buttonId: `${prefix}command`, buttonText: {displayText: 'List Menu 📂'}, type: 1}]
+    let buttonMessage = {
+        image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png'},
+    caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3946,40 +3944,18 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
 `,
-                            hydratedButtons: [{
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'All Menu 📁 ',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️ ',
-                                    id: `${prefix}owner`
-                                }
-                                
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                            
+                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
 break
             case 'list': case 'menu': {
-            	timestampe = speed();
-latensie = speed() - timestampe
-                anu = ``
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-			     
-                            hydratedFooterText: `
+            	let buttons = [
+        {buttonId: `${prefix}owner`, buttonText: {displayText: 'Owner 🙋‍♂️'}, type: 1},
+{buttonId: `${prefix}allmenu`, buttonText: {displayText: 'All Menu 📁'}, type: 1},
+        {buttonId: `${prefix}command`, buttonText: {displayText: 'List Menu 📂'}, type: 1}]
+    let buttonMessage = {
+        image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png'},
+    caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -4001,28 +3977,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
  `,
-                            hydratedButtons: [{
-                                
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'All Menu 📁 ',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🙋‍♂️ ',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                           
+                 IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
                 break
                 case 'command': {
