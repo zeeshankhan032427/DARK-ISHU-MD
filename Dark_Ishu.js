@@ -3914,13 +3914,15 @@ break
 
 	    
                      case 'alive': case 'ishu':{
-                           	let buttons = [
-        {buttonId: `${prefix}owner`, buttonText: {displayText: 'Owner 🙋‍♂️'}, type: 1},
-{buttonId: `${prefix}allmenu`, buttonText: {displayText: 'All Menu 📁'}, type: 1},
-        {buttonId: `${prefix}command`, buttonText: {displayText: 'List Menu 📂'}, type: 1}]
-    let buttonMessage = {
-        image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png'},
-    caption: `
+                           	timestampe = speed();
+latensie = speed() - timestampe
+ anu = ` `
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            hydratedContentText: anu,
+                            
+                            hydratedFooterText: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3943,18 +3945,34 @@ break
              
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
-`,             
-                }
-                IshuMdNx.sendMessage(m.chat, buttonMessage, )
+`,
+                            hydratedButtons: [{
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'All Menu 📁 ',
+                                    id: `${prefix}allmenu`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu 📂',
+                                    id: `${prefix}command`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner 🙋‍♂️ ',
+                                    id: `${prefix}owner`
+                                }
+                                
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat })
+                IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
             case 'list': case 'menu': {
-            	let buttons = [
-        {buttonId: `${prefix}owner`, buttonText: {displayText: 'Owner 🙋‍♂️'}, type: 1},
-{buttonId: `${prefix}allmenu`, buttonText: {displayText: 'All Menu 📁'}, type: 1},
-        {buttonId: `${prefix}command`, buttonText: {displayText: 'List Menu 📂'}, type: 1}]
-    let buttonMessage = {
-        image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png'},
+            	let buttonMessage = {
+        image: { url: 'https://i.ibb.co/x7qYTrq/20220605-103944.jpg'},
     caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
@@ -3977,8 +3995,28 @@ break
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
  `,
-                }
-                IshuMdNx.sendMessage(m.chat, buttonMessage, )
+                            hydratedButtons: [{
+                                
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'All Menu 📁 ',
+                                    id: `${prefix}allmenu`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu 📂',
+                                    id: `${prefix}command`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner 🙋‍♂️ ',
+                                    id: `${prefix}owner`
+                                }
+                            }]
+		}
+                    
+              
+                IshuMdNx.relayMessage(m.chat, buttonMessage, })
                 }
                 break
                 case 'command': {
