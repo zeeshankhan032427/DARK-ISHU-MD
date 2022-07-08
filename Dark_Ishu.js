@@ -2118,8 +2118,8 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ..  ' }, { quoted: m })
-                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Upload 📥 වෙන ගමන් ..' }, { quoted: m })
+                IshuMdNx.sendMessage(m.chat, { text :'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් .. ඉක්මනින් ඔයාට Upload 📤 කරන්නම්... ' }, { quoted: m })
+          
         
                 IshuMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
