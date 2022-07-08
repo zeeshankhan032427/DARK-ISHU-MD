@@ -2078,10 +2078,10 @@ break
                 if (!text) return reply(`Example : ${prefix + command} Stay`)
                 let yts = require("yt-search")
                 let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.thebest)]
+                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 සිංදුව 🎵 '}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️ වීඩීයෝව 📽️'}, type: 1}
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 සිංදුව 🎵 '}, type: 4},
+                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️ වීඩීයෝව 📽️'}, type: 4}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
