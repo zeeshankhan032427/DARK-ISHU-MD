@@ -3920,7 +3920,7 @@ break
 {buttonId: `${prefix}allmenu`, buttonText: {displayText: '⫷ ALLMENU ⫸'}, type: 1},
         {buttonId: `${prefix}command`, buttonText: {displayText: '⫷ LISTMENU ⫸'}, type: 1}]
     let buttonMessage = {
-        image: { url: 'https://i.ibb.co/x7qYTrq/20220605-103944.jpg'},
+        image: { url: 'https://i.im.ge/2022/07/03/uUTgTK.png'},
     caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *ＤＡＲＫ ＩＳＨＵ ʷʰᵃᵗˢᵃᵖᵖ ᵇᵒᵗ*
@@ -3946,7 +3946,7 @@ break
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
 `,
     }
-                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                IshuMdNx.sendMessage(m.chat, buttonMessage, )
 }
 	    break
             
