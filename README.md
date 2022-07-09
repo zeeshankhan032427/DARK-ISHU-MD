@@ -35,7 +35,7 @@
 * හරි දැන් වැඩේ ඉවරයි.. ඔයාට ඕනනම් Setting.js වල තියන Setting ඔයාට ඕන විදියට වෙනස් කර ගන්න පුලුවන් .....
 
 
-<b>මෙතනින් qr එක Scan කරන්න [Here](https://replit.com/@nexusNw/M-D-SCANNER-V2?v=1?outputonly=1&lite=1#index.js)
+<b>මෙතනින් qr එක Scan කරන්න [Here](https://replit.com/@ishansandeepa18/DARK-ISHU-MD?v=1)
 
 
 
