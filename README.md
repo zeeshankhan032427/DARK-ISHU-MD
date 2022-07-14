@@ -100,7 +100,7 @@
 ## ස්තූතිය ....
 
 * ❤ Misara Sathsara 
-* ❤ Anjalika Morin Chamuduni ( Voice Owner 🎤 )
+
 	
 	
 	
